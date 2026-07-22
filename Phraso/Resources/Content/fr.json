@@ -1,0 +1,379 @@
+{
+  "language_pack_id": "fr_zh-Hans_v1",
+  "target_locale": "fr-FR",
+  "display_name_zh": "法语",
+  "display_name_native": "Français",
+  "flag": "🇫🇷",
+  "version": 1,
+  "romanization": false,
+  "engines": [
+    {
+      "engine_id": "fr_engine_01_want",
+      "title_zh": "表达想做某事",
+      "structure_hint": "Je veux + 动词原形",
+      "summary_zh": "用 Je veux 加动词原形，说出你想做的任何事。",
+      "status": "available",
+      "free": true,
+      "lessons": [
+        {
+          "lesson_id": "fr_want_01",
+          "title_zh": "我想说法语",
+          "duration_min": 8,
+          "objective_zh": "学会用 Je veux + 动词原形 表达意愿，并把它迁移到新的时间场景。",
+          "exercises": [
+            {
+              "exercise_id": "fr_want_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "这节课你会学到法语里最有用的结构之一：说出「我想做某事」。先思考，再揭晓——不用着急。",
+              "hint_zh": "整节课只有一个新零件，其他都会由你自己组装。"
+            },
+            {
+              "exercise_id": "fr_want_01_understand",
+              "type": "understand",
+              "explanation_zh": "法语里「我想」是 Je veux。它后面直接加动词原形，不需要任何连接词。比如 parler 是「说话」，合起来就是「我想说」。",
+              "canonical": "Je veux parler.",
+              "hint_zh": "veux 的 x 不发音，听起来像「热·维」。发音只是提示，可懂度优先。"
+            },
+            {
+              "exercise_id": "fr_want_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "我想说法语。",
+              "canonical": "Je veux parler français.",
+              "acceptable_variants": ["Je veux parler le français."],
+              "focus_tags": ["want_infinitive", "word_order"],
+              "hint_zh": "结构：Je veux + 动词原形 + 语言名。「法语」是 français。"
+            },
+            {
+              "exercise_id": "fr_want_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "我想说法语。",
+              "canonical": "Je veux parler français.",
+              "blocks": ["Je", "veux", "parler", "français"],
+              "distractors": ["veut", "parle"],
+              "focus_tags": ["want_infinitive"]
+            },
+            {
+              "exercise_id": "fr_want_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "我想学习。",
+              "canonical": "Je veux apprendre.",
+              "blocks": ["Je", "veux", "apprendre"],
+              "distractors": ["parler", "veut"],
+              "focus_tags": ["want_infinitive"]
+            },
+            {
+              "exercise_id": "fr_want_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：我想说法语。",
+              "canonical": "Je veux parler français.",
+              "focus_tags": ["want_infinitive", "pronunciation"]
+            },
+            {
+              "exercise_id": "fr_want_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：我现在想说。",
+              "canonical": "Je veux parler maintenant.",
+              "blocks": ["Je", "veux", "parler", "maintenant"],
+              "distractors": ["français"],
+              "focus_tags": ["want_infinitive", "time_word"],
+              "hint_zh": "只改变一个变量：把「法语」换成「现在」maintenant，放在句末。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "engine_id": "fr_engine_02_intro",
+      "title_zh": "自我介绍",
+      "structure_hint": "Je m'appelle… / Je viens de…",
+      "summary_zh": "介绍自己的名字和来自哪里。",
+      "status": "available",
+      "free": false,
+      "lessons": [
+        {
+          "lesson_id": "fr_intro_01",
+          "title_zh": "我叫……",
+          "duration_min": 8,
+          "objective_zh": "学会介绍名字与来源地，并把结构迁移到介绍别人。",
+          "exercises": [
+            {
+              "exercise_id": "fr_intro_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "上一课你已经会说 Je veux（我想）。这节课换一个「我」开头的结构：介绍自己。"
+            },
+            {
+              "exercise_id": "fr_intro_01_understand",
+              "type": "understand",
+              "explanation_zh": "法语介绍名字用 Je m'appelle，字面意思是「我把自己称作」。后面直接加名字。",
+              "canonical": "Je m'appelle Anna.",
+              "hint_zh": "m'appelle 连读成一个整体，把它当成一个词块记。"
+            },
+            {
+              "exercise_id": "fr_intro_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "我叫安娜。",
+              "canonical": "Je m'appelle Anna.",
+              "focus_tags": ["self_intro"],
+              "hint_zh": "Je + m'appelle + 名字。"
+            },
+            {
+              "exercise_id": "fr_intro_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "我叫保罗。",
+              "canonical": "Je m'appelle Paul.",
+              "blocks": ["Je", "m'appelle", "Paul"],
+              "distractors": ["suis", "veux"],
+              "focus_tags": ["self_intro"]
+            },
+            {
+              "exercise_id": "fr_intro_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "我来自中国。",
+              "canonical": "Je viens de Chine.",
+              "blocks": ["Je", "viens", "de", "Chine"],
+              "distractors": ["m'appelle"],
+              "focus_tags": ["origin"],
+              "hint_zh": "「来自」是 viens de，两个词块都不能少。"
+            },
+            {
+              "exercise_id": "fr_intro_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：我叫安娜，我来自中国。（先说第一句）",
+              "canonical": "Je m'appelle Anna.",
+              "focus_tags": ["self_intro", "pronunciation"]
+            },
+            {
+              "exercise_id": "fr_intro_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：他叫保罗。",
+              "canonical": "Il s'appelle Paul.",
+              "blocks": ["Il", "s'appelle", "Paul"],
+              "distractors": ["Je", "m'appelle"],
+              "focus_tags": ["self_intro", "third_person"],
+              "hint_zh": "只改变人物：「他」是 Il，动词随人称变成 s'appelle。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "engine_id": "fr_engine_03_have",
+      "title_zh": "有与没有",
+      "structure_hint": "J'ai + 名词",
+      "summary_zh": "用 avoir 表达拥有：一个问题、一张票、时间。",
+      "status": "available",
+      "free": false,
+      "lessons": [
+        {
+          "lesson_id": "fr_have_01",
+          "title_zh": "我有一个问题",
+          "duration_min": 8,
+          "objective_zh": "学会 J'ai + 名词，并迁移到数量变化。",
+          "exercises": [
+            {
+              "exercise_id": "fr_have_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "旅行、开会、点餐都离不开一句话：「我有……」。这节课就装配它。"
+            },
+            {
+              "exercise_id": "fr_have_01_understand",
+              "type": "understand",
+              "explanation_zh": "「我有」是 J'ai——其实是 Je + ai 缩合而来。后面直接加名词短语。",
+              "canonical": "J'ai une question.",
+              "hint_zh": "une 是「一个」（阴性）。名词的性别先跟着词块记，不用背规则表。"
+            },
+            {
+              "exercise_id": "fr_have_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "我有一个问题。",
+              "canonical": "J'ai une question.",
+              "focus_tags": ["have"],
+              "hint_zh": "J'ai + une + question。"
+            },
+            {
+              "exercise_id": "fr_have_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "我有一个问题。",
+              "canonical": "J'ai une question.",
+              "blocks": ["J'ai", "une", "question"],
+              "distractors": ["Je", "veux"],
+              "focus_tags": ["have"]
+            },
+            {
+              "exercise_id": "fr_have_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "我有一张票。",
+              "canonical": "J'ai un billet.",
+              "blocks": ["J'ai", "un", "billet"],
+              "distractors": ["une"],
+              "focus_tags": ["have", "gender"],
+              "hint_zh": "billet（票）是阳性，用 un。"
+            },
+            {
+              "exercise_id": "fr_have_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：我有一个问题。",
+              "canonical": "J'ai une question.",
+              "focus_tags": ["have", "pronunciation"]
+            },
+            {
+              "exercise_id": "fr_have_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：我有两个问题。",
+              "canonical": "J'ai deux questions.",
+              "blocks": ["J'ai", "deux", "questions"],
+              "distractors": ["une", "question"],
+              "focus_tags": ["have", "plural"],
+              "hint_zh": "只改变数量：deux（二）之后名词加 s，读音几乎不变。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "engine_id": "fr_engine_04_like",
+      "title_zh": "喜欢与偏好",
+      "structure_hint": "J'aime + 名词",
+      "summary_zh": "表达喜欢：咖啡、茶、旅行。",
+      "status": "available",
+      "free": false,
+      "lessons": [
+        {
+          "lesson_id": "fr_like_01",
+          "title_zh": "我喜欢咖啡",
+          "duration_min": 8,
+          "objective_zh": "学会 J'aime + 定冠词 + 名词，并迁移到第三人称。",
+          "exercises": [
+            {
+              "exercise_id": "fr_like_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "聊天里最常用的破冰句：说说你喜欢什么。"
+            },
+            {
+              "exercise_id": "fr_like_01_understand",
+              "type": "understand",
+              "explanation_zh": "「我喜欢」是 J'aime。表达喜欢某类东西时，法语名词前要加定冠词 le / la。",
+              "canonical": "J'aime le café.",
+              "hint_zh": "这里的 le 不是「那个」，而是泛指「咖啡这类东西」。"
+            },
+            {
+              "exercise_id": "fr_like_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "我喜欢咖啡。",
+              "canonical": "J'aime le café.",
+              "focus_tags": ["like", "article"],
+              "hint_zh": "J'aime + le + café。别忘了定冠词。"
+            },
+            {
+              "exercise_id": "fr_like_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "我喜欢咖啡。",
+              "canonical": "J'aime le café.",
+              "blocks": ["J'aime", "le", "café"],
+              "distractors": ["J'ai", "un"],
+              "focus_tags": ["like", "article"]
+            },
+            {
+              "exercise_id": "fr_like_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "我喜欢茶。",
+              "canonical": "J'aime le thé.",
+              "blocks": ["J'aime", "le", "thé"],
+              "distractors": ["café"],
+              "focus_tags": ["like"]
+            },
+            {
+              "exercise_id": "fr_like_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：我喜欢咖啡。",
+              "canonical": "J'aime le café.",
+              "focus_tags": ["like", "pronunciation"]
+            },
+            {
+              "exercise_id": "fr_like_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：他喜欢咖啡。",
+              "canonical": "Il aime le café.",
+              "blocks": ["Il", "aime", "le", "café"],
+              "distractors": ["J'aime"],
+              "focus_tags": ["like", "third_person"],
+              "hint_zh": "只改变人物：Il + aime，不再缩合。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "engine_id": "fr_engine_05_restaurant",
+      "title_zh": "餐厅点餐",
+      "structure_hint": "Je voudrais…",
+      "summary_zh": "用礼貌形式点单。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "fr_engine_06_questions",
+      "title_zh": "提出问题",
+      "structure_hint": "Est-ce que… ?",
+      "summary_zh": "把陈述句变成问题。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "fr_engine_07_negation",
+      "title_zh": "说「不」",
+      "structure_hint": "ne … pas",
+      "summary_zh": "否定框架包住动词。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "fr_engine_08_time",
+      "title_zh": "时间表达",
+      "structure_hint": "aujourd'hui / demain",
+      "summary_zh": "把时间词装进已有结构。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "fr_engine_09_can",
+      "title_zh": "能与会",
+      "structure_hint": "Je peux + 动词原形",
+      "summary_zh": "表达能力与许可。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "fr_engine_10_hotel",
+      "title_zh": "酒店入住",
+      "structure_hint": "J'ai une réservation.",
+      "summary_zh": "办理入住与提出需求。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "fr_engine_11_directions",
+      "title_zh": "问路",
+      "structure_hint": "Où est… ?",
+      "summary_zh": "找到车站、酒店和洗手间。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "fr_engine_12_future",
+      "title_zh": "谈论计划",
+      "structure_hint": "Je vais + 动词原形",
+      "summary_zh": "用近将来时说计划。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    }
+  ]
+}

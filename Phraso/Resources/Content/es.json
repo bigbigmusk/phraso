@@ -1,0 +1,378 @@
+{
+  "language_pack_id": "es_zh-Hans_v1",
+  "target_locale": "es-ES",
+  "display_name_zh": "西班牙语",
+  "display_name_native": "Español",
+  "flag": "🇪🇸",
+  "version": 1,
+  "romanization": false,
+  "engines": [
+    {
+      "engine_id": "es_engine_01_want",
+      "title_zh": "表达想做某事",
+      "structure_hint": "Quiero + 动词原形",
+      "summary_zh": "西语动词自带人称：Quiero 一个词就是「我想」。",
+      "status": "available",
+      "free": true,
+      "lessons": [
+        {
+          "lesson_id": "es_want_01",
+          "title_zh": "我想说西班牙语",
+          "duration_min": 8,
+          "objective_zh": "学会 Quiero + 动词原形，并迁移到提问「你想……吗？」。",
+          "exercises": [
+            {
+              "exercise_id": "es_want_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "这节课学西语里最能立刻用起来的结构：「我想做某事」。先自己想，再看答案。",
+              "hint_zh": "西语和法语可以对比着学，但每门语言分别回答，不做机械对照。"
+            },
+            {
+              "exercise_id": "es_want_01_understand",
+              "type": "understand",
+              "explanation_zh": "西语的动词已经包含了人称：Quiero 一个词就是「我想」，不需要再说「我」。后面直接加动词原形。",
+              "canonical": "Quiero hablar.",
+              "hint_zh": "hablar（说话）里的 h 不发音，直接从 a 开始读。"
+            },
+            {
+              "exercise_id": "es_want_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "我想说西班牙语。",
+              "canonical": "Quiero hablar español.",
+              "focus_tags": ["want_infinitive", "verb_person"],
+              "hint_zh": "Quiero + 动词原形 + 语言名。「西班牙语」是 español。"
+            },
+            {
+              "exercise_id": "es_want_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "我想说西班牙语。",
+              "canonical": "Quiero hablar español.",
+              "blocks": ["Quiero", "hablar", "español"],
+              "distractors": ["Quieres", "habla"],
+              "focus_tags": ["want_infinitive"]
+            },
+            {
+              "exercise_id": "es_want_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "我想学习。",
+              "canonical": "Quiero aprender.",
+              "blocks": ["Quiero", "aprender"],
+              "distractors": ["hablar", "Quieres"],
+              "focus_tags": ["want_infinitive"]
+            },
+            {
+              "exercise_id": "es_want_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：我想说西班牙语。",
+              "canonical": "Quiero hablar español.",
+              "focus_tags": ["want_infinitive", "pronunciation"]
+            },
+            {
+              "exercise_id": "es_want_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：你想说吗？",
+              "canonical": "¿Quieres hablar?",
+              "blocks": ["Quieres", "hablar"],
+              "distractors": ["Quiero"],
+              "focus_tags": ["want_infinitive", "question", "second_person"],
+              "hint_zh": "只改变人称：动词词尾从 -o 变成 -es，就从「我想」变成「你想」。问句前后加 ¿ ?。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "engine_id": "es_engine_02_intro",
+      "title_zh": "自我介绍",
+      "structure_hint": "Me llamo… / Soy de…",
+      "summary_zh": "介绍名字和来自哪里。",
+      "status": "available",
+      "free": false,
+      "lessons": [
+        {
+          "lesson_id": "es_intro_01",
+          "title_zh": "我叫……",
+          "duration_min": 8,
+          "objective_zh": "学会介绍名字与来源地，并迁移到介绍别人。",
+          "exercises": [
+            {
+              "exercise_id": "es_intro_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "你已经会说 Quiero（我想）。这节课认识另一组「我」的表达：介绍自己。"
+            },
+            {
+              "exercise_id": "es_intro_01_understand",
+              "type": "understand",
+              "explanation_zh": "西语介绍名字用 Me llamo，字面是「我把自己叫作」。后面直接加名字。",
+              "canonical": "Me llamo Anna.",
+              "hint_zh": "ll 读作近似「y」的音：llamo ≈ 「亚莫」。"
+            },
+            {
+              "exercise_id": "es_intro_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "我叫安娜。",
+              "canonical": "Me llamo Anna.",
+              "focus_tags": ["self_intro"],
+              "hint_zh": "Me + llamo + 名字。"
+            },
+            {
+              "exercise_id": "es_intro_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "我叫巴勃罗。",
+              "canonical": "Me llamo Pablo.",
+              "blocks": ["Me", "llamo", "Pablo"],
+              "distractors": ["Soy", "Quiero"],
+              "focus_tags": ["self_intro"]
+            },
+            {
+              "exercise_id": "es_intro_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "我来自中国。",
+              "canonical": "Soy de China.",
+              "blocks": ["Soy", "de", "China"],
+              "distractors": ["Me", "llamo"],
+              "focus_tags": ["origin"],
+              "hint_zh": "「我来自」用 Soy de，Soy 本身就带「我」。"
+            },
+            {
+              "exercise_id": "es_intro_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：我叫安娜。",
+              "canonical": "Me llamo Anna.",
+              "focus_tags": ["self_intro", "pronunciation"]
+            },
+            {
+              "exercise_id": "es_intro_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：他叫巴勃罗。",
+              "canonical": "Se llama Pablo.",
+              "blocks": ["Se", "llama", "Pablo"],
+              "distractors": ["Me", "llamo"],
+              "focus_tags": ["self_intro", "third_person"],
+              "hint_zh": "只改变人物：Me llamo → Se llama。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "engine_id": "es_engine_03_have",
+      "title_zh": "有与没有",
+      "structure_hint": "Tengo + 名词",
+      "summary_zh": "用 tener 表达拥有。",
+      "status": "available",
+      "free": false,
+      "lessons": [
+        {
+          "lesson_id": "es_have_01",
+          "title_zh": "我有一个问题",
+          "duration_min": 8,
+          "objective_zh": "学会 Tengo + 名词，并迁移到数量变化。",
+          "exercises": [
+            {
+              "exercise_id": "es_have_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "「我有……」是旅行和工作里的万能开场。这节课把它装配出来。"
+            },
+            {
+              "exercise_id": "es_have_01_understand",
+              "type": "understand",
+              "explanation_zh": "「我有」是 Tengo，一个词自带「我」。后面直接加名词短语。",
+              "canonical": "Tengo una pregunta.",
+              "hint_zh": "una 是「一个」（阴性）；pregunta 是「问题」。"
+            },
+            {
+              "exercise_id": "es_have_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "我有一个问题。",
+              "canonical": "Tengo una pregunta.",
+              "focus_tags": ["have"],
+              "hint_zh": "Tengo + una + pregunta。"
+            },
+            {
+              "exercise_id": "es_have_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "我有一个问题。",
+              "canonical": "Tengo una pregunta.",
+              "blocks": ["Tengo", "una", "pregunta"],
+              "distractors": ["Quiero", "un"],
+              "focus_tags": ["have"]
+            },
+            {
+              "exercise_id": "es_have_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "我有一张票。",
+              "canonical": "Tengo un billete.",
+              "blocks": ["Tengo", "un", "billete"],
+              "distractors": ["una"],
+              "focus_tags": ["have", "gender"],
+              "hint_zh": "billete（票）是阳性，用 un。"
+            },
+            {
+              "exercise_id": "es_have_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：我有一个问题。",
+              "canonical": "Tengo una pregunta.",
+              "focus_tags": ["have", "pronunciation"]
+            },
+            {
+              "exercise_id": "es_have_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：我有两个问题。",
+              "canonical": "Tengo dos preguntas.",
+              "blocks": ["Tengo", "dos", "preguntas"],
+              "distractors": ["una", "pregunta"],
+              "focus_tags": ["have", "plural"],
+              "hint_zh": "只改变数量：dos（二），名词加 s。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "engine_id": "es_engine_04_like",
+      "title_zh": "喜欢与偏好",
+      "structure_hint": "Me gusta + 名词",
+      "summary_zh": "西语的「喜欢」结构与中文不同：某物让我喜欢。",
+      "status": "available",
+      "free": false,
+      "lessons": [
+        {
+          "lesson_id": "es_like_01",
+          "title_zh": "我喜欢咖啡",
+          "duration_min": 8,
+          "objective_zh": "理解 Me gusta 的特殊结构，并迁移到新对象。",
+          "exercises": [
+            {
+              "exercise_id": "es_like_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "西语表达「喜欢」的方式和中文思路不一样——这正是需要理解而不是硬背的地方。"
+            },
+            {
+              "exercise_id": "es_like_01_understand",
+              "type": "understand",
+              "explanation_zh": "Me gusta el café 字面是「咖啡让我喜欢」。Me 表示「对我来说」，gusta 跟着后面的东西走，不跟着「我」。",
+              "canonical": "Me gusta el café.",
+              "hint_zh": "先把 Me gusta 当成一个整体词块：「我喜欢」。"
+            },
+            {
+              "exercise_id": "es_like_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "我喜欢咖啡。",
+              "canonical": "Me gusta el café.",
+              "focus_tags": ["like", "gustar_structure"],
+              "hint_zh": "Me gusta + el + café。"
+            },
+            {
+              "exercise_id": "es_like_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "我喜欢咖啡。",
+              "canonical": "Me gusta el café.",
+              "blocks": ["Me", "gusta", "el", "café"],
+              "distractors": ["Tengo", "un"],
+              "focus_tags": ["like"]
+            },
+            {
+              "exercise_id": "es_like_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "我喜欢茶。",
+              "canonical": "Me gusta el té.",
+              "blocks": ["Me", "gusta", "el", "té"],
+              "distractors": ["café"],
+              "focus_tags": ["like"]
+            },
+            {
+              "exercise_id": "es_like_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：我喜欢咖啡。",
+              "canonical": "Me gusta el café.",
+              "focus_tags": ["like", "pronunciation"]
+            },
+            {
+              "exercise_id": "es_like_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：你喜欢咖啡吗？",
+              "canonical": "¿Te gusta el café?",
+              "blocks": ["Te", "gusta", "el", "café"],
+              "distractors": ["Me"],
+              "focus_tags": ["like", "question", "second_person"],
+              "hint_zh": "只改变一个变量：Me（对我）→ Te（对你），加上问号语调。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "engine_id": "es_engine_05_restaurant",
+      "title_zh": "餐厅点餐",
+      "structure_hint": "Quisiera…",
+      "summary_zh": "用礼貌形式点单。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "es_engine_06_questions",
+      "title_zh": "提出问题",
+      "structure_hint": "¿Dónde…? ¿Qué…?",
+      "summary_zh": "疑问词和语调提问。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "es_engine_07_negation",
+      "title_zh": "说「不」",
+      "structure_hint": "No + 动词",
+      "summary_zh": "把 no 放在动词前。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "es_engine_08_time",
+      "title_zh": "时间表达",
+      "structure_hint": "hoy / mañana / ahora",
+      "summary_zh": "把时间词装进已有结构。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "es_engine_09_can",
+      "title_zh": "能与会",
+      "structure_hint": "Puedo + 动词原形",
+      "summary_zh": "表达能力与请求许可。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "es_engine_10_hotel",
+      "title_zh": "酒店入住",
+      "structure_hint": "Tengo una reserva.",
+      "summary_zh": "办理入住与提出需求。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "es_engine_11_directions",
+      "title_zh": "问路",
+      "structure_hint": "¿Dónde está…?",
+      "summary_zh": "找到车站、酒店和洗手间。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "es_engine_12_future",
+      "title_zh": "谈论计划",
+      "structure_hint": "Voy a + 动词原形",
+      "summary_zh": "用 ir a 结构说计划。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    }
+  ]
+}

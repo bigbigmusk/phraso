@@ -1,0 +1,403 @@
+{
+  "language_pack_id": "ko_zh-Hans_v1",
+  "target_locale": "ko-KR",
+  "display_name_zh": "韩语",
+  "display_name_native": "한국어",
+  "flag": "🇰🇷",
+  "version": 1,
+  "romanization": true,
+  "engines": [
+    {
+      "engine_id": "ko_engine_01_want",
+      "title_zh": "表达想做某事",
+      "structure_hint": "-고 싶어요",
+      "summary_zh": "动词后接 -고 싶어요，主语常由语境省略。",
+      "status": "available",
+      "free": true,
+      "lessons": [
+        {
+          "lesson_id": "ko_want_01",
+          "title_zh": "我想说韩语",
+          "duration_min": 9,
+          "objective_zh": "理解 -고 싶어요 结构和助词 -로，并迁移到新的时间场景。",
+          "exercises": [
+            {
+              "exercise_id": "ko_want_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "韩语的句子按自己的逻辑生长：信息可以省略，助词标记角色，语尾表达语气。这节课先搭第一个韩语结构。",
+              "hint_zh": "词块按意义单位拆分，不按单个字拆分。"
+            },
+            {
+              "exercise_id": "ko_want_01_understand",
+              "type": "understand",
+              "explanation_zh": "「想做某事」在韩语里是动词后接 -고 싶어요。「说」是 말하다，去掉 -다 接上后就是 말하고 싶어요（想说）。注意：不需要说「我」——语境清楚时主语直接省略。",
+              "canonical": "말하고 싶어요.",
+              "romanized": "malhago sipeoyo",
+              "hint_zh": "싶어요 的 어요 是客气语尾，日常对话默认使用。"
+            },
+            {
+              "exercise_id": "ko_want_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "我想说韩语。",
+              "canonical": "한국어로 말하고 싶어요.",
+              "romanized": "hangugeoro malhago sipeoyo",
+              "focus_tags": ["want_desiderative", "particle_ro"],
+              "hint_zh": "「用韩语」是 한국어 + 助词 로（用/以），然后接「想说」。"
+            },
+            {
+              "exercise_id": "ko_want_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "我想说韩语。",
+              "canonical": "한국어로 말하고 싶어요.",
+              "romanized": "hangugeoro malhago sipeoyo",
+              "blocks": ["한국어로", "말하고 싶어요"],
+              "distractors": ["한국어를", "말해요"],
+              "focus_tags": ["want_desiderative", "particle_ro"],
+              "hint_zh": "助词 로 表示「用（某种语言）」，注意和宾语助词 를 区分。"
+            },
+            {
+              "exercise_id": "ko_want_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "我想学习。",
+              "canonical": "배우고 싶어요.",
+              "romanized": "baeugo sipeoyo",
+              "blocks": ["배우고", "싶어요"],
+              "distractors": ["말하고"],
+              "focus_tags": ["want_desiderative"],
+              "hint_zh": "「学」是 배우다 → 배우고 + 싶어요。"
+            },
+            {
+              "exercise_id": "ko_want_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：我想说韩语。",
+              "canonical": "한국어로 말하고 싶어요.",
+              "romanized": "hangugeoro malhago sipeoyo",
+              "focus_tags": ["want_desiderative", "pronunciation"]
+            },
+            {
+              "exercise_id": "ko_want_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：我现在想说。",
+              "canonical": "지금 말하고 싶어요.",
+              "romanized": "jigeum malhago sipeoyo",
+              "blocks": ["지금", "말하고 싶어요"],
+              "distractors": ["한국어로"],
+              "focus_tags": ["want_desiderative", "time_word"],
+              "hint_zh": "只改变一个变量：把「用韩语」换成时间词 지금（现在），放在句首。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "engine_id": "ko_engine_02_intro",
+      "title_zh": "自我介绍",
+      "structure_hint": "저는 ~예요 / ~에서 왔어요",
+      "summary_zh": "介绍名字和来自哪里。",
+      "status": "available",
+      "free": false,
+      "lessons": [
+        {
+          "lesson_id": "ko_intro_01",
+          "title_zh": "我是安娜",
+          "duration_min": 8,
+          "objective_zh": "学会「저는 ~예요」和「~에서 왔어요」，并迁移到新身份。",
+          "exercises": [
+            {
+              "exercise_id": "ko_intro_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "初次见面时，一句自我介绍就能打开局面。这节课认识两个助词：는 和 에서。"
+            },
+            {
+              "exercise_id": "ko_intro_01_understand",
+              "type": "understand",
+              "explanation_zh": "「我是安娜」：저（我）+ 主题助词 는 + 名字 + 예요（是）。예요 放在句尾，是客气的说法。",
+              "canonical": "저는 안나예요.",
+              "romanized": "jeoneun Anna-yeyo",
+              "hint_zh": "는 标记「话题」：这句话是关于我的。"
+            },
+            {
+              "exercise_id": "ko_intro_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "我是安娜。",
+              "canonical": "저는 안나예요.",
+              "romanized": "jeoneun Anna-yeyo",
+              "focus_tags": ["self_intro", "topic_particle"],
+              "hint_zh": "저는 + 名字 + 예요。"
+            },
+            {
+              "exercise_id": "ko_intro_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "我是民浩。",
+              "canonical": "저는 민호예요.",
+              "romanized": "jeoneun Minho-yeyo",
+              "blocks": ["저는", "민호예요"],
+              "distractors": ["민호가"],
+              "focus_tags": ["self_intro"]
+            },
+            {
+              "exercise_id": "ko_intro_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "我来自中国。",
+              "canonical": "중국에서 왔어요.",
+              "romanized": "junggugeseo wasseoyo",
+              "blocks": ["중국에서", "왔어요"],
+              "distractors": ["중국을"],
+              "focus_tags": ["origin", "particle_eseo"],
+              "hint_zh": "에서 表示「从（某地）」；主语「我」再次省略。"
+            },
+            {
+              "exercise_id": "ko_intro_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：我是安娜。",
+              "canonical": "저는 안나예요.",
+              "romanized": "jeoneun Anna-yeyo",
+              "focus_tags": ["self_intro", "pronunciation"]
+            },
+            {
+              "exercise_id": "ko_intro_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：我是学生。",
+              "canonical": "저는 학생이에요.",
+              "romanized": "jeoneun haksaeng-ieyo",
+              "blocks": ["저는", "학생이에요"],
+              "distractors": ["안나예요"],
+              "focus_tags": ["self_intro", "copula_variant"],
+              "hint_zh": "只改变身份：학생（学生）以辅音结尾，所以「是」用 이에요 而不是 예요。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "engine_id": "ko_engine_03_have",
+      "title_zh": "有与没有",
+      "structure_hint": "~이/가 있어요",
+      "summary_zh": "用 있어요 表达存在与拥有。",
+      "status": "available",
+      "free": false,
+      "lessons": [
+        {
+          "lesson_id": "ko_have_01",
+          "title_zh": "我有一个问题",
+          "duration_min": 8,
+          "objective_zh": "学会「~이/가 있어요」，并迁移到新对象。",
+          "exercises": [
+            {
+              "exercise_id": "ko_have_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "韩语的「有」和中文思路不同：某物「存在」于我这里。理解了这一点，很多句子会突然通顺。"
+            },
+            {
+              "exercise_id": "ko_have_01_understand",
+              "type": "understand",
+              "explanation_zh": "「我有一个问题」在韩语里是「问题存在」：질문（问题）+ 主格助词 이 + 있어요（存在/有）。",
+              "canonical": "질문이 있어요.",
+              "romanized": "jilmuni isseoyo",
+              "hint_zh": "질문 以辅音结尾用 이；以元音结尾的词用 가。"
+            },
+            {
+              "exercise_id": "ko_have_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "我有一个问题。",
+              "canonical": "질문이 있어요.",
+              "romanized": "jilmuni isseoyo",
+              "focus_tags": ["have_exist", "subject_particle"],
+              "hint_zh": "질문이 + 있어요。「我」省略。"
+            },
+            {
+              "exercise_id": "ko_have_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "我有一个问题。",
+              "canonical": "질문이 있어요.",
+              "romanized": "jilmuni isseoyo",
+              "blocks": ["질문이", "있어요"],
+              "distractors": ["질문을", "없어요"],
+              "focus_tags": ["have_exist"]
+            },
+            {
+              "exercise_id": "ko_have_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "我有时间。",
+              "canonical": "시간이 있어요.",
+              "romanized": "sigani isseoyo",
+              "blocks": ["시간이", "있어요"],
+              "distractors": ["질문이"],
+              "focus_tags": ["have_exist"]
+            },
+            {
+              "exercise_id": "ko_have_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：我有一个问题。",
+              "canonical": "질문이 있어요.",
+              "romanized": "jilmuni isseoyo",
+              "focus_tags": ["have_exist", "pronunciation"]
+            },
+            {
+              "exercise_id": "ko_have_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：我没有时间。",
+              "canonical": "시간이 없어요.",
+              "romanized": "sigani eopseoyo",
+              "blocks": ["시간이", "없어요"],
+              "distractors": ["있어요"],
+              "focus_tags": ["have_exist", "negation"],
+              "hint_zh": "只改变一个变量：있어요（有）→ 없어요（没有）。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "engine_id": "ko_engine_04_like",
+      "title_zh": "喜欢与偏好",
+      "structure_hint": "~을/를 좋아해요",
+      "summary_zh": "表达喜欢，认识宾语助词。",
+      "status": "available",
+      "free": false,
+      "lessons": [
+        {
+          "lesson_id": "ko_like_01",
+          "title_zh": "我喜欢咖啡",
+          "duration_min": 8,
+          "objective_zh": "学会「~을/를 좋아해요」，并迁移到新对象。",
+          "exercises": [
+            {
+              "exercise_id": "ko_like_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "聊喜好是韩语对话最自然的起点。这节课认识宾语助词 를/을。"
+            },
+            {
+              "exercise_id": "ko_like_01_understand",
+              "type": "understand",
+              "explanation_zh": "「我喜欢咖啡」：커피（咖啡）+ 宾语助词 를 + 좋아해요（喜欢）。助词告诉你「咖啡」是被喜欢的对象。",
+              "canonical": "커피를 좋아해요.",
+              "romanized": "keopireul joahaeyo",
+              "hint_zh": "커피 以元音结尾用 를；辅音结尾的词用 을。"
+            },
+            {
+              "exercise_id": "ko_like_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "我喜欢咖啡。",
+              "canonical": "커피를 좋아해요.",
+              "romanized": "keopireul joahaeyo",
+              "focus_tags": ["like", "object_particle"],
+              "hint_zh": "커피를 + 좋아해요。「我」省略。"
+            },
+            {
+              "exercise_id": "ko_like_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "我喜欢咖啡。",
+              "canonical": "커피를 좋아해요.",
+              "romanized": "keopireul joahaeyo",
+              "blocks": ["커피를", "좋아해요"],
+              "distractors": ["커피가", "있어요"],
+              "focus_tags": ["like"]
+            },
+            {
+              "exercise_id": "ko_like_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "我喜欢茶。",
+              "canonical": "차를 좋아해요.",
+              "romanized": "chareul joahaeyo",
+              "blocks": ["차를", "좋아해요"],
+              "distractors": ["커피를"],
+              "focus_tags": ["like"]
+            },
+            {
+              "exercise_id": "ko_like_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：我喜欢咖啡。",
+              "canonical": "커피를 좋아해요.",
+              "romanized": "keopireul joahaeyo",
+              "focus_tags": ["like", "pronunciation"]
+            },
+            {
+              "exercise_id": "ko_like_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：我喜欢音乐。",
+              "canonical": "음악을 좋아해요.",
+              "romanized": "eumageul joahaeyo",
+              "blocks": ["음악을", "좋아해요"],
+              "distractors": ["음악를"],
+              "focus_tags": ["like", "particle_variant"],
+              "hint_zh": "只改变对象：음악（音乐）以辅音结尾，助词要用 을。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "engine_id": "ko_engine_05_restaurant",
+      "title_zh": "餐厅点餐",
+      "structure_hint": "~ 주세요",
+      "summary_zh": "用 주세요 礼貌点单。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "ko_engine_06_questions",
+      "title_zh": "提出问题",
+      "structure_hint": "语调 + 疑问词",
+      "summary_zh": "客气语尾的疑问用法。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "ko_engine_07_negation",
+      "title_zh": "说「不」",
+      "structure_hint": "안 + 动词",
+      "summary_zh": "最常用的否定方式。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "ko_engine_08_time",
+      "title_zh": "时间表达",
+      "structure_hint": "지금 / 오늘 / 내일",
+      "summary_zh": "时间词与已有结构组合。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "ko_engine_09_can",
+      "title_zh": "能与会",
+      "structure_hint": "~(으)ㄹ 수 있어요",
+      "summary_zh": "表达能力的固定结构。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "ko_engine_10_hotel",
+      "title_zh": "酒店入住",
+      "structure_hint": "예약했어요.",
+      "summary_zh": "办理入住与提出需求。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "ko_engine_11_directions",
+      "title_zh": "问路",
+      "structure_hint": "~이/가 어디예요?",
+      "summary_zh": "找到车站、酒店和洗手间。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "ko_engine_12_future",
+      "title_zh": "谈论计划",
+      "structure_hint": "~(으)ㄹ 거예요",
+      "summary_zh": "说出你的计划。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    }
+  ]
+}

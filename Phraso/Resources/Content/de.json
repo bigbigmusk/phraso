@@ -1,0 +1,378 @@
+{
+  "language_pack_id": "de_zh-Hans_v1",
+  "target_locale": "de-DE",
+  "display_name_zh": "德语",
+  "display_name_native": "Deutsch",
+  "flag": "🇩🇪",
+  "version": 1,
+  "romanization": false,
+  "engines": [
+    {
+      "engine_id": "de_engine_01_want",
+      "title_zh": "表达想做某事",
+      "structure_hint": "Ich will … + 动词在句尾",
+      "summary_zh": "德语的句框结构：情态动词在第二位，主要动词去句尾。",
+      "status": "available",
+      "free": true,
+      "lessons": [
+        {
+          "lesson_id": "de_want_01",
+          "title_zh": "我想说德语",
+          "duration_min": 9,
+          "objective_zh": "理解德语句框：wollen 在第二位，主要动词在句尾；并迁移到加入时间词。",
+          "exercises": [
+            {
+              "exercise_id": "de_want_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "德语最重要的不是单词，而是句子的「框架」。这节课你会亲手搭一次这个框架。",
+              "hint_zh": "德语按自己的语序逻辑教学，不套用其他语言的顺序。"
+            },
+            {
+              "exercise_id": "de_want_01_understand",
+              "type": "understand",
+              "explanation_zh": "德语里「我想」是 Ich will。关键规则：will 占据第二位，而真正的动作动词（比如 sprechen「说」）要放到句子的最后，形成一个「句框」。",
+              "canonical": "Ich will sprechen.",
+              "hint_zh": "记住画面：will 和 sprechen 像两扇门，把句子的其他部分夹在中间。"
+            },
+            {
+              "exercise_id": "de_want_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "我想说德语。",
+              "canonical": "Ich will Deutsch sprechen.",
+              "focus_tags": ["want_modal", "verb_final"],
+              "hint_zh": "Ich will + 宾语 + 动词原形在句尾。「德语」Deutsch 放在中间。"
+            },
+            {
+              "exercise_id": "de_want_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "我想说德语。",
+              "canonical": "Ich will Deutsch sprechen.",
+              "blocks": ["Ich", "will", "Deutsch", "sprechen"],
+              "distractors": ["wollen", "spreche"],
+              "focus_tags": ["want_modal", "verb_final"]
+            },
+            {
+              "exercise_id": "de_want_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "我想学习。",
+              "canonical": "Ich will lernen.",
+              "blocks": ["Ich", "will", "lernen"],
+              "distractors": ["sprechen", "wollen"],
+              "focus_tags": ["want_modal"]
+            },
+            {
+              "exercise_id": "de_want_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：我想说德语。",
+              "canonical": "Ich will Deutsch sprechen.",
+              "focus_tags": ["want_modal", "pronunciation"]
+            },
+            {
+              "exercise_id": "de_want_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：我今天想说德语。",
+              "canonical": "Ich will heute Deutsch sprechen.",
+              "blocks": ["Ich", "will", "heute", "Deutsch", "sprechen"],
+              "distractors": ["morgen"],
+              "focus_tags": ["want_modal", "verb_final", "time_word"],
+              "hint_zh": "只加一个变量：时间词 heute（今天）放进句框中间，sprechen 仍然守在句尾。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "engine_id": "de_engine_02_intro",
+      "title_zh": "自我介绍",
+      "structure_hint": "Ich heiße… / Ich komme aus…",
+      "summary_zh": "介绍名字和来自哪里。",
+      "status": "available",
+      "free": false,
+      "lessons": [
+        {
+          "lesson_id": "de_intro_01",
+          "title_zh": "我叫……",
+          "duration_min": 8,
+          "objective_zh": "学会介绍名字与来源地，并迁移到介绍别人。",
+          "exercises": [
+            {
+              "exercise_id": "de_intro_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "你已经搭过德语句框了。这节课的结构更简单：动词稳稳站在第二位。"
+            },
+            {
+              "exercise_id": "de_intro_01_understand",
+              "type": "understand",
+              "explanation_zh": "介绍名字用 Ich heiße（我名叫），后面直接加名字。动词 heiße 在第二位，这是德语陈述句的铁律。",
+              "canonical": "Ich heiße Anna.",
+              "hint_zh": "ß 读作清晰的 s 音。"
+            },
+            {
+              "exercise_id": "de_intro_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "我叫安娜。",
+              "canonical": "Ich heiße Anna.",
+              "focus_tags": ["self_intro", "verb_second"],
+              "hint_zh": "Ich + heiße + 名字。"
+            },
+            {
+              "exercise_id": "de_intro_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "我叫保罗。",
+              "canonical": "Ich heiße Paul.",
+              "blocks": ["Ich", "heiße", "Paul"],
+              "distractors": ["will", "bin"],
+              "focus_tags": ["self_intro"]
+            },
+            {
+              "exercise_id": "de_intro_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "我来自中国。",
+              "canonical": "Ich komme aus China.",
+              "blocks": ["Ich", "komme", "aus", "China"],
+              "distractors": ["heiße"],
+              "focus_tags": ["origin"],
+              "hint_zh": "「来自」是 komme aus，两个词块都不能少。"
+            },
+            {
+              "exercise_id": "de_intro_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：我叫安娜。",
+              "canonical": "Ich heiße Anna.",
+              "focus_tags": ["self_intro", "pronunciation"]
+            },
+            {
+              "exercise_id": "de_intro_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：他叫保罗。",
+              "canonical": "Er heißt Paul.",
+              "blocks": ["Er", "heißt", "Paul"],
+              "distractors": ["Ich", "heiße"],
+              "focus_tags": ["self_intro", "third_person"],
+              "hint_zh": "只改变人物：Ich heiße → Er heißt，动词词尾跟着人称变化。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "engine_id": "de_engine_03_have",
+      "title_zh": "有与没有",
+      "structure_hint": "Ich habe + 名词",
+      "summary_zh": "用 haben 表达拥有。",
+      "status": "available",
+      "free": false,
+      "lessons": [
+        {
+          "lesson_id": "de_have_01",
+          "title_zh": "我有一个问题",
+          "duration_min": 8,
+          "objective_zh": "学会 Ich habe + 名词，并迁移到数量变化。",
+          "exercises": [
+            {
+              "exercise_id": "de_have_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "开会举手、旅行求助，都从「我有一个问题」开始。"
+            },
+            {
+              "exercise_id": "de_have_01_understand",
+              "type": "understand",
+              "explanation_zh": "「我有」是 Ich habe，动词照旧站在第二位。后面加名词短语。",
+              "canonical": "Ich habe eine Frage.",
+              "hint_zh": "eine 是「一个」（阴性）；Frage 是「问题」。德语名词都大写开头。"
+            },
+            {
+              "exercise_id": "de_have_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "我有一个问题。",
+              "canonical": "Ich habe eine Frage.",
+              "focus_tags": ["have"],
+              "hint_zh": "Ich habe + eine + Frage。"
+            },
+            {
+              "exercise_id": "de_have_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "我有一个问题。",
+              "canonical": "Ich habe eine Frage.",
+              "blocks": ["Ich", "habe", "eine", "Frage"],
+              "distractors": ["will", "ein"],
+              "focus_tags": ["have"]
+            },
+            {
+              "exercise_id": "de_have_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "我有一张票。",
+              "canonical": "Ich habe ein Ticket.",
+              "blocks": ["Ich", "habe", "ein", "Ticket"],
+              "distractors": ["eine"],
+              "focus_tags": ["have", "gender"],
+              "hint_zh": "Ticket 是中性名词，用 ein。"
+            },
+            {
+              "exercise_id": "de_have_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：我有一个问题。",
+              "canonical": "Ich habe eine Frage.",
+              "focus_tags": ["have", "pronunciation"]
+            },
+            {
+              "exercise_id": "de_have_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：我有两个问题。",
+              "canonical": "Ich habe zwei Fragen.",
+              "blocks": ["Ich", "habe", "zwei", "Fragen"],
+              "distractors": ["eine", "Frage"],
+              "focus_tags": ["have", "plural"],
+              "hint_zh": "只改变数量：zwei（二），Frage 复数变成 Fragen。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "engine_id": "de_engine_04_like",
+      "title_zh": "喜欢与偏好",
+      "structure_hint": "Ich mag + 名词",
+      "summary_zh": "表达喜欢：咖啡、茶、音乐。",
+      "status": "available",
+      "free": false,
+      "lessons": [
+        {
+          "lesson_id": "de_like_01",
+          "title_zh": "我喜欢咖啡",
+          "duration_min": 8,
+          "objective_zh": "学会 Ich mag + 名词，并迁移到第三人称。",
+          "exercises": [
+            {
+              "exercise_id": "de_like_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "聊喜好是最容易开启的对话。德语里这个结构非常直接。"
+            },
+            {
+              "exercise_id": "de_like_01_understand",
+              "type": "understand",
+              "explanation_zh": "「我喜欢」是 Ich mag，后面直接加名词，泛指时不需要冠词。",
+              "canonical": "Ich mag Kaffee.",
+              "hint_zh": "比法语和西语都省事：不用加 le 或 el。每门语言有自己的逻辑。"
+            },
+            {
+              "exercise_id": "de_like_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "我喜欢咖啡。",
+              "canonical": "Ich mag Kaffee.",
+              "focus_tags": ["like"],
+              "hint_zh": "Ich mag + Kaffee。"
+            },
+            {
+              "exercise_id": "de_like_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "我喜欢咖啡。",
+              "canonical": "Ich mag Kaffee.",
+              "blocks": ["Ich", "mag", "Kaffee"],
+              "distractors": ["habe", "will"],
+              "focus_tags": ["like"]
+            },
+            {
+              "exercise_id": "de_like_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "我喜欢茶。",
+              "canonical": "Ich mag Tee.",
+              "blocks": ["Ich", "mag", "Tee"],
+              "distractors": ["Kaffee"],
+              "focus_tags": ["like"]
+            },
+            {
+              "exercise_id": "de_like_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：我喜欢咖啡。",
+              "canonical": "Ich mag Kaffee.",
+              "focus_tags": ["like", "pronunciation"]
+            },
+            {
+              "exercise_id": "de_like_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：他喜欢咖啡。",
+              "canonical": "Er mag Kaffee.",
+              "blocks": ["Er", "mag", "Kaffee"],
+              "distractors": ["Ich"],
+              "focus_tags": ["like", "third_person"],
+              "hint_zh": "只改变人物：Ich → Er，动词 mag 这次不用变。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "engine_id": "de_engine_05_restaurant",
+      "title_zh": "餐厅点餐",
+      "structure_hint": "Ich hätte gern…",
+      "summary_zh": "用礼貌形式点单。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "de_engine_06_questions",
+      "title_zh": "提出问题",
+      "structure_hint": "动词提到第一位",
+      "summary_zh": "是非问句的语序变化。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "de_engine_07_negation",
+      "title_zh": "说「不」",
+      "structure_hint": "nicht / kein",
+      "summary_zh": "两种否定的分工。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "de_engine_08_time",
+      "title_zh": "时间表达",
+      "structure_hint": "heute / morgen / jetzt",
+      "summary_zh": "时间词进入句框。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "de_engine_09_can",
+      "title_zh": "能与会",
+      "structure_hint": "Ich kann … + 动词在句尾",
+      "summary_zh": "können 复用你已掌握的句框。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "de_engine_10_hotel",
+      "title_zh": "酒店入住",
+      "structure_hint": "Ich habe eine Reservierung.",
+      "summary_zh": "办理入住与提出需求。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "de_engine_11_directions",
+      "title_zh": "问路",
+      "structure_hint": "Wo ist… ?",
+      "summary_zh": "找到车站、酒店和洗手间。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    },
+    {
+      "engine_id": "de_engine_12_future",
+      "title_zh": "谈论计划",
+      "structure_hint": "Ich möchte… / Ich werde…",
+      "summary_zh": "计划与愿望的表达。",
+      "status": "coming_soon",
+      "free": false,
+      "lessons": []
+    }
+  ]
+}

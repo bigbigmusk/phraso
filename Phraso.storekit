@@ -1,0 +1,82 @@
+{
+  "identifier" : "PHRASO_STORE_CONFIG",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_locale" : "zh_CN",
+    "_storefront" : "CHN",
+    "_storeKitErrors" : [
+
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "PHRASO_PLUS_GROUP",
+      "localizations" : [
+
+      ],
+      "name" : "Phraso Plus",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "28.00",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "PHRASO_PLUS_MONTHLY",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "解锁全部课程、完整复习与离线语言包",
+              "displayName" : "Phraso Plus 月度",
+              "locale" : "zh_CN"
+            }
+          ],
+          "productID" : "com.phraso.plus.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Phraso Plus Monthly",
+          "subscriptionGroupID" : "PHRASO_PLUS_GROUP",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "198.00",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "PHRASO_PLUS_ANNUAL",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "解锁全部课程、完整复习与离线语言包",
+              "displayName" : "Phraso Plus 年度",
+              "locale" : "zh_CN"
+            }
+          ],
+          "productID" : "com.phraso.plus.annual",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Phraso Plus Annual",
+          "subscriptionGroupID" : "PHRASO_PLUS_GROUP",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}
