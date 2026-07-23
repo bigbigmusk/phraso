@@ -151,7 +151,7 @@ final class SpeechService: ObservableObject {
     /// 转写与目标句的宽松比对：
     /// 只检查关键结构是否出现，可懂度优先，不以逐字符相同为标准（PRD 12）。
     /// 低置信 / 空转写一律判为 recognition_uncertain，绝不包装成学习者错误。
-    static func evaluate(transcript: String, canonical: String) -> FeedbackTag {
+    nonisolated static func evaluate(transcript: String, canonical: String) -> FeedbackTag {
         let heard = tokens(of: transcript)
         let target = tokens(of: canonical)
         guard !target.isEmpty else { return .recognitionUncertain }
@@ -165,7 +165,7 @@ final class SpeechService: ObservableObject {
         return .recognitionUncertain
     }
 
-    static func tokens(of text: String) -> [String] {
+    nonisolated static func tokens(of text: String) -> [String] {
         text.lowercased()
             .components(separatedBy: CharacterSet.alphanumerics.union(.nonBaseCharacters).inverted)
             .filter { !$0.isEmpty }

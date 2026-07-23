@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		AA0000000000000000000061 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA0000000000000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA0000000000000000000030;
+			remoteInfo = Phraso;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		AA0000000000000000000020 /* Phraso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phraso.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0000000000000000000021 /* PhrasoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhrasoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -18,10 +29,24 @@
 			path = Phraso;
 			sourceTree = "<group>";
 		};
+		AA0000000000000000000011 /* PhrasoTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			explicitFileTypes = {};
+			explicitFolders = ();
+			path = PhrasoTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AA0000000000000000000032 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0000000000000000000037 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				AA0000000000000000000010 /* Phraso */,
+				AA0000000000000000000011 /* PhrasoTests */,
 				AA0000000000000000000002 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				AA0000000000000000000020 /* Phraso.app */,
+				AA0000000000000000000021 /* PhrasoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +99,29 @@
 			productReference = AA0000000000000000000020 /* Phraso.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AA0000000000000000000035 /* PhrasoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA0000000000000000000045 /* Build configuration list for PBXNativeTarget "PhrasoTests" */;
+			buildPhases = (
+				AA0000000000000000000036 /* Sources */,
+				AA0000000000000000000037 /* Frameworks */,
+				AA0000000000000000000038 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA0000000000000000000060 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AA0000000000000000000011 /* PhrasoTests */,
+			);
+			name = PhrasoTests;
+			packageProductDependencies = (
+			);
+			productName = PhrasoTests;
+			productReference = AA0000000000000000000021 /* PhrasoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -84,6 +134,10 @@
 				TargetAttributes = {
 					AA0000000000000000000030 = {
 						CreatedOnToolsVersion = 16.0;
+					};
+					AA0000000000000000000035 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = AA0000000000000000000030;
 					};
 				};
 			};
@@ -103,12 +157,20 @@
 			projectRoot = "";
 			targets = (
 				AA0000000000000000000030 /* Phraso */,
+				AA0000000000000000000035 /* PhrasoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AA0000000000000000000033 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0000000000000000000038 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,7 +187,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AA0000000000000000000036 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA0000000000000000000060 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA0000000000000000000030 /* Phraso */;
+			targetProxy = AA0000000000000000000061 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		AA0000000000000000000051 /* Debug */ = {
@@ -309,9 +386,56 @@
 			};
 			name = Release;
 		};
+		AA0000000000000000000046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phraso.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phraso.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Phraso";
+			};
+			name = Debug;
+		};
+		AA0000000000000000000047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.phraso.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Phraso.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Phraso";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AA0000000000000000000045 /* Build configuration list for PBXNativeTarget "PhrasoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000000000000000000046 /* Debug */,
+				AA0000000000000000000047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AA0000000000000000000040 /* Build configuration list for PBXNativeTarget "Phraso" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

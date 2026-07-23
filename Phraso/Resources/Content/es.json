@@ -305,38 +305,296 @@
     {
       "engine_id": "es_engine_05_restaurant",
       "title_zh": "餐厅点餐",
-      "structure_hint": "Quisiera…",
-      "summary_zh": "用礼貌形式点单。",
-      "status": "coming_soon",
+      "structure_hint": "Quisiera… , por favor",
+      "summary_zh": "用礼貌形式点单和买单。",
+      "status": "available",
       "free": false,
-      "lessons": []
+      "lessons": [
+        {
+          "lesson_id": "es_rest_01",
+          "title_zh": "我想要一杯咖啡",
+          "duration_min": 8,
+          "objective_zh": "学会 Quisiera 礼貌点单，并迁移到数量变化。",
+          "exercises": [
+            {
+              "exercise_id": "es_rest_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "你已经会说 Quiero（我想）。在餐厅里，西语有一个更礼貌的版本，这节课用它点单。"
+            },
+            {
+              "exercise_id": "es_rest_01_understand",
+              "type": "understand",
+              "explanation_zh": "Quisiera 是 Quiero 的礼貌形式，相当于「我想要 / 麻烦给我」。句尾加 por favor（请）更自然。",
+              "canonical": "Quisiera un café, por favor.",
+              "hint_zh": "把 por favor 当成一个固定词块。"
+            },
+            {
+              "exercise_id": "es_rest_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "我想要一杯咖啡，谢谢。（餐厅点单）",
+              "canonical": "Quisiera un café, por favor.",
+              "focus_tags": ["polite_request"],
+              "hint_zh": "Quisiera + un café + por favor。"
+            },
+            {
+              "exercise_id": "es_rest_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "我想要一杯咖啡，谢谢。",
+              "canonical": "Quisiera un café, por favor.",
+              "blocks": ["Quisiera", "un", "café", "por favor"],
+              "distractors": ["Quiero", "una"],
+              "focus_tags": ["polite_request"]
+            },
+            {
+              "exercise_id": "es_rest_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "麻烦给我账单。",
+              "canonical": "Quisiera la cuenta, por favor.",
+              "blocks": ["Quisiera", "la", "cuenta", "por favor"],
+              "distractors": ["un café"],
+              "focus_tags": ["polite_request", "restaurant"],
+              "hint_zh": "la cuenta 是「账单」。"
+            },
+            {
+              "exercise_id": "es_rest_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：我想要一杯咖啡，谢谢。",
+              "canonical": "Quisiera un café, por favor.",
+              "focus_tags": ["polite_request", "pronunciation"]
+            },
+            {
+              "exercise_id": "es_rest_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：我想要两杯咖啡，谢谢。",
+              "canonical": "Quisiera dos cafés, por favor.",
+              "blocks": ["Quisiera", "dos", "cafés", "por favor"],
+              "distractors": ["un", "café"],
+              "focus_tags": ["polite_request", "plural"],
+              "hint_zh": "只改变数量：dos + cafés（复数加 s）。"
+            }
+          ]
+        }
+      ]
     },
     {
       "engine_id": "es_engine_06_questions",
-      "title_zh": "提出问题",
-      "structure_hint": "¿Dónde…? ¿Qué…?",
-      "summary_zh": "疑问词和语调提问。",
-      "status": "coming_soon",
+      "title_zh": "问在哪里",
+      "structure_hint": "¿Dónde está…?",
+      "summary_zh": "用一个句型找到任何地方。",
+      "status": "available",
       "free": false,
-      "lessons": []
+      "lessons": [
+        {
+          "lesson_id": "es_ques_01",
+          "title_zh": "洗手间在哪里？",
+          "duration_min": 8,
+          "objective_zh": "学会 ¿Dónde está…? 问位置，并迁移到新地点。",
+          "exercises": [
+            {
+              "exercise_id": "es_ques_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "旅行中最救命的一句话：「……在哪里？」这节课只需要一个句型。"
+            },
+            {
+              "exercise_id": "es_ques_01_understand",
+              "type": "understand",
+              "explanation_zh": "¿Dónde está…? 意思是「……在哪里？」。Dónde 是「哪里」，está 是「在」。后面接你要找的地方。",
+              "canonical": "¿Dónde está el baño?",
+              "hint_zh": "el baño 是「洗手间」。西语问句开头有倒问号 ¿，说的时候用升调。"
+            },
+            {
+              "exercise_id": "es_ques_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "洗手间在哪里？",
+              "canonical": "¿Dónde está el baño?",
+              "focus_tags": ["question_where"],
+              "hint_zh": "¿Dónde está + el baño?"
+            },
+            {
+              "exercise_id": "es_ques_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "洗手间在哪里？",
+              "canonical": "¿Dónde está el baño?",
+              "blocks": ["Dónde", "está", "el", "baño"],
+              "distractors": ["la", "es"],
+              "focus_tags": ["question_where"]
+            },
+            {
+              "exercise_id": "es_ques_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "车站在哪里？",
+              "canonical": "¿Dónde está la estación?",
+              "blocks": ["Dónde", "está", "la", "estación"],
+              "distractors": ["el"],
+              "focus_tags": ["question_where", "gender"],
+              "hint_zh": "estación（车站）是阴性，用 la。"
+            },
+            {
+              "exercise_id": "es_ques_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口问：洗手间在哪里？",
+              "canonical": "¿Dónde está el baño?",
+              "focus_tags": ["question_where", "pronunciation"]
+            },
+            {
+              "exercise_id": "es_ques_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：酒店在哪里？",
+              "canonical": "¿Dónde está el hotel?",
+              "blocks": ["Dónde", "está", "el", "hotel"],
+              "distractors": ["la"],
+              "focus_tags": ["question_where"],
+              "hint_zh": "只改变地点：el hotel（酒店）。"
+            }
+          ]
+        }
+      ]
     },
     {
       "engine_id": "es_engine_07_negation",
       "title_zh": "说「不」",
       "structure_hint": "No + 动词",
-      "summary_zh": "把 no 放在动词前。",
-      "status": "coming_soon",
+      "summary_zh": "把 no 放在动词前，一步完成否定。",
+      "status": "available",
       "free": false,
-      "lessons": []
+      "lessons": [
+        {
+          "lesson_id": "es_neg_01",
+          "title_zh": "我不说英语",
+          "duration_min": 8,
+          "objective_zh": "学会 No + 动词的否定，并迁移到 tener 结构。",
+          "exercises": [
+            {
+              "exercise_id": "es_neg_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "西语的否定可能是所有语言里最简单的之一——但简单不等于不用练。"
+            },
+            {
+              "exercise_id": "es_neg_01_understand",
+              "type": "understand",
+              "explanation_zh": "把 no 直接放在动词前面，句子就否定了。「我说」是 hablo，「我不说」就是 no hablo。",
+              "canonical": "No hablo inglés.",
+              "hint_zh": "主语「我」照旧省略，动词词尾已经告诉对方是谁。"
+            },
+            {
+              "exercise_id": "es_neg_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "我不说英语。",
+              "canonical": "No hablo inglés.",
+              "focus_tags": ["negation"],
+              "hint_zh": "No + hablo + inglés。"
+            },
+            {
+              "exercise_id": "es_neg_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "我不说英语。",
+              "canonical": "No hablo inglés.",
+              "blocks": ["No", "hablo", "inglés"],
+              "distractors": ["hablar", "español"],
+              "focus_tags": ["negation"]
+            },
+            {
+              "exercise_id": "es_neg_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "我不想要咖啡。",
+              "canonical": "No quiero café.",
+              "blocks": ["No", "quiero", "café"],
+              "distractors": ["hablo"],
+              "focus_tags": ["negation", "want"]
+            },
+            {
+              "exercise_id": "es_neg_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：我不说英语。",
+              "canonical": "No hablo inglés.",
+              "focus_tags": ["negation", "pronunciation"]
+            },
+            {
+              "exercise_id": "es_neg_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：我没有时间。",
+              "canonical": "No tengo tiempo.",
+              "blocks": ["No", "tengo", "tiempo"],
+              "distractors": ["quiero"],
+              "focus_tags": ["negation", "have"],
+              "hint_zh": "换一个动词试试：no + tengo（我有）= 我没有。"
+            }
+          ]
+        }
+      ]
     },
     {
       "engine_id": "es_engine_08_time",
       "title_zh": "时间表达",
       "structure_hint": "hoy / mañana / ahora",
-      "summary_zh": "把时间词装进已有结构。",
-      "status": "coming_soon",
+      "summary_zh": "把时间词装进你已掌握的结构。",
+      "status": "available",
       "free": false,
-      "lessons": []
+      "lessons": [
+        {
+          "lesson_id": "es_time_01",
+          "title_zh": "今天、明天、现在",
+          "duration_min": 8,
+          "objective_zh": "学会三个高频时间词，并与已学结构自由组合。",
+          "exercises": [
+            {
+              "exercise_id": "es_time_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "这节课没有新语法——三个时间词，直接插进你已经会的句子。"
+            },
+            {
+              "exercise_id": "es_time_01_understand",
+              "type": "understand",
+              "explanation_zh": "hoy（今天）、mañana（明天）、ahora（现在）。通常放在句末，原句语序不变。",
+              "canonical": "Quiero hablar hoy.",
+              "hint_zh": "mañana 的 ñ 读作「尼呀」中的软音。"
+            },
+            {
+              "exercise_id": "es_time_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "我今天想说话。",
+              "canonical": "Quiero hablar hoy.",
+              "focus_tags": ["time_word", "want_infinitive"],
+              "hint_zh": "Quiero hablar + hoy 在句末。"
+            },
+            {
+              "exercise_id": "es_time_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "我今天想说话。",
+              "canonical": "Quiero hablar hoy.",
+              "blocks": ["Quiero", "hablar", "hoy"],
+              "distractors": ["mañana", "ahora"],
+              "focus_tags": ["time_word"]
+            },
+            {
+              "exercise_id": "es_time_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "我明天想学习。",
+              "canonical": "Quiero aprender mañana.",
+              "blocks": ["Quiero", "aprender", "mañana"],
+              "distractors": ["hoy"],
+              "focus_tags": ["time_word"]
+            },
+            {
+              "exercise_id": "es_time_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：我今天想说话。",
+              "canonical": "Quiero hablar hoy.",
+              "focus_tags": ["time_word", "pronunciation"]
+            },
+            {
+              "exercise_id": "es_time_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：我现在有时间。",
+              "canonical": "Tengo tiempo ahora.",
+              "blocks": ["Tengo", "tiempo", "ahora"],
+              "distractors": ["mañana"],
+              "focus_tags": ["time_word", "have"],
+              "hint_zh": "换一个结构：Tengo（我有）+ 时间词照样放句末。"
+            }
+          ]
+        }
+      ]
     },
     {
       "engine_id": "es_engine_09_can",

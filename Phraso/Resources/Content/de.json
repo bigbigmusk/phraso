@@ -306,37 +306,296 @@
       "engine_id": "de_engine_05_restaurant",
       "title_zh": "餐厅点餐",
       "structure_hint": "Ich hätte gern…",
-      "summary_zh": "用礼貌形式点单。",
-      "status": "coming_soon",
+      "summary_zh": "用礼貌形式点单和买单。",
+      "status": "available",
       "free": false,
-      "lessons": []
+      "lessons": [
+        {
+          "lesson_id": "de_rest_01",
+          "title_zh": "我想要一杯咖啡",
+          "duration_min": 8,
+          "objective_zh": "学会 Ich hätte gern 礼貌点单，并迁移到数量变化。",
+          "exercises": [
+            {
+              "exercise_id": "de_rest_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "你已经会用 Ich will 表达意愿。在餐厅里，德语有一个更礼貌的固定说法，这节课用它点单。"
+            },
+            {
+              "exercise_id": "de_rest_01_understand",
+              "type": "understand",
+              "explanation_zh": "Ich hätte gern… 字面是「我乐意有……」，是点单的标准礼貌句式。把它当成一个整体词块：「我想要」。",
+              "canonical": "Ich hätte gern einen Kaffee.",
+              "hint_zh": "einen 是 ein 在这里的变化形式——先跟着词块记，规则以后再总结。"
+            },
+            {
+              "exercise_id": "de_rest_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "我想要一杯咖啡。（餐厅点单）",
+              "canonical": "Ich hätte gern einen Kaffee.",
+              "focus_tags": ["polite_request"],
+              "hint_zh": "Ich hätte gern + einen Kaffee。"
+            },
+            {
+              "exercise_id": "de_rest_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "我想要一杯咖啡。",
+              "canonical": "Ich hätte gern einen Kaffee.",
+              "blocks": ["Ich", "hätte gern", "einen", "Kaffee"],
+              "distractors": ["will", "ein"],
+              "focus_tags": ["polite_request"]
+            },
+            {
+              "exercise_id": "de_rest_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "麻烦给我账单。",
+              "canonical": "Ich hätte gern die Rechnung.",
+              "blocks": ["Ich", "hätte gern", "die", "Rechnung"],
+              "distractors": ["einen Kaffee"],
+              "focus_tags": ["polite_request", "restaurant"],
+              "hint_zh": "die Rechnung 是「账单」。"
+            },
+            {
+              "exercise_id": "de_rest_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：我想要一杯咖啡。",
+              "canonical": "Ich hätte gern einen Kaffee.",
+              "focus_tags": ["polite_request", "pronunciation"]
+            },
+            {
+              "exercise_id": "de_rest_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：我想要两杯咖啡。",
+              "canonical": "Ich hätte gern zwei Kaffee.",
+              "blocks": ["Ich", "hätte gern", "zwei", "Kaffee"],
+              "distractors": ["einen"],
+              "focus_tags": ["polite_request", "plural"],
+              "hint_zh": "只改变数量：zwei（二），点单时 Kaffee 常保持原形。"
+            }
+          ]
+        }
+      ]
     },
     {
       "engine_id": "de_engine_06_questions",
       "title_zh": "提出问题",
       "structure_hint": "动词提到第一位",
-      "summary_zh": "是非问句的语序变化。",
-      "status": "coming_soon",
+      "summary_zh": "是非问句：把动词搬到句首。",
+      "status": "available",
       "free": false,
-      "lessons": []
+      "lessons": [
+        {
+          "lesson_id": "de_ques_01",
+          "title_zh": "您说英语吗？",
+          "duration_min": 8,
+          "objective_zh": "学会动词提前的是非问句和礼貌称呼 Sie，并迁移到 haben 结构。",
+          "exercises": [
+            {
+              "exercise_id": "de_ques_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "德语的是非问句不需要任何新词——只需要把动词搬个家。"
+            },
+            {
+              "exercise_id": "de_ques_01_understand",
+              "type": "understand",
+              "explanation_zh": "陈述句动词在第二位；把动词提到第一位，就成了是非问句。对陌生人用礼貌的 Sie（您），动词用原形形式 sprechen / haben。",
+              "canonical": "Sprechen Sie Englisch?",
+              "hint_zh": "Sie（您）任何时候都大写。"
+            },
+            {
+              "exercise_id": "de_ques_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "您说英语吗？",
+              "canonical": "Sprechen Sie Englisch?",
+              "focus_tags": ["question", "verb_first", "polite_sie"],
+              "hint_zh": "动词 Sprechen 在第一位 + Sie + Englisch。"
+            },
+            {
+              "exercise_id": "de_ques_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "您说英语吗？",
+              "canonical": "Sprechen Sie Englisch?",
+              "blocks": ["Sprechen", "Sie", "Englisch"],
+              "distractors": ["Ich", "spreche"],
+              "focus_tags": ["question", "verb_first"]
+            },
+            {
+              "exercise_id": "de_ques_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "您有时间吗？",
+              "canonical": "Haben Sie Zeit?",
+              "blocks": ["Haben", "Sie", "Zeit"],
+              "distractors": ["habe"],
+              "focus_tags": ["question", "verb_first", "have"],
+              "hint_zh": "同一个开关：把 Haben 提到第一位。"
+            },
+            {
+              "exercise_id": "de_ques_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口问：您说英语吗？",
+              "canonical": "Sprechen Sie Englisch?",
+              "focus_tags": ["question", "pronunciation"]
+            },
+            {
+              "exercise_id": "de_ques_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：您有问题吗？",
+              "canonical": "Haben Sie eine Frage?",
+              "blocks": ["Haben", "Sie", "eine", "Frage"],
+              "distractors": ["Zeit"],
+              "focus_tags": ["question", "have"],
+              "hint_zh": "只改变宾语：eine Frage（一个问题）。"
+            }
+          ]
+        }
+      ]
     },
     {
       "engine_id": "de_engine_07_negation",
       "title_zh": "说「不」",
-      "structure_hint": "nicht / kein",
-      "summary_zh": "两种否定的分工。",
-      "status": "coming_soon",
+      "structure_hint": "… nicht",
+      "summary_zh": "用 nicht 否定动词。",
+      "status": "available",
       "free": false,
-      "lessons": []
+      "lessons": [
+        {
+          "lesson_id": "de_neg_01",
+          "title_zh": "我不明白",
+          "duration_min": 8,
+          "objective_zh": "学会 nicht 的否定位置，并迁移到句框结构。",
+          "exercises": [
+            {
+              "exercise_id": "de_neg_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "「我不明白」可能是学任何语言时最诚实、也最有用的一句话。"
+            },
+            {
+              "exercise_id": "de_neg_01_understand",
+              "type": "understand",
+              "explanation_zh": "否定动词时，把 nicht 放在句尾附近。「我明白」是 Ich verstehe，「我不明白」就是 Ich verstehe nicht。",
+              "canonical": "Ich verstehe nicht.",
+              "hint_zh": "先掌握这个位置感：nicht 喜欢靠后站。"
+            },
+            {
+              "exercise_id": "de_neg_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "我不明白。",
+              "canonical": "Ich verstehe nicht.",
+              "focus_tags": ["negation"],
+              "hint_zh": "Ich verstehe + nicht。"
+            },
+            {
+              "exercise_id": "de_neg_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "我不明白。",
+              "canonical": "Ich verstehe nicht.",
+              "blocks": ["Ich", "verstehe", "nicht"],
+              "distractors": ["kein", "verstehen"],
+              "focus_tags": ["negation"]
+            },
+            {
+              "exercise_id": "de_neg_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "我不知道。",
+              "canonical": "Ich weiß nicht.",
+              "blocks": ["Ich", "weiß", "nicht"],
+              "distractors": ["verstehe"],
+              "focus_tags": ["negation"]
+            },
+            {
+              "exercise_id": "de_neg_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：我不明白。",
+              "canonical": "Ich verstehe nicht.",
+              "focus_tags": ["negation", "pronunciation"]
+            },
+            {
+              "exercise_id": "de_neg_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：我不想说。",
+              "canonical": "Ich will nicht sprechen.",
+              "blocks": ["Ich", "will", "nicht", "sprechen"],
+              "distractors": ["verstehe"],
+              "focus_tags": ["negation", "want_modal", "verb_final"],
+              "hint_zh": "回到句框：nicht 站在句框中间，sprechen 仍守在句尾。"
+            }
+          ]
+        }
+      ]
     },
     {
       "engine_id": "de_engine_08_time",
       "title_zh": "时间表达",
       "structure_hint": "heute / morgen / jetzt",
-      "summary_zh": "时间词进入句框。",
-      "status": "coming_soon",
+      "summary_zh": "时间词进入句框中间。",
+      "status": "available",
       "free": false,
-      "lessons": []
+      "lessons": [
+        {
+          "lesson_id": "de_time_01",
+          "title_zh": "今天、明天、现在",
+          "duration_min": 8,
+          "objective_zh": "学会三个高频时间词在句框中的位置。",
+          "exercises": [
+            {
+              "exercise_id": "de_time_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "这节课没有新语法——三个时间词，装进你已经搭好的句框。"
+            },
+            {
+              "exercise_id": "de_time_01_understand",
+              "type": "understand",
+              "explanation_zh": "heute（今天）、morgen（明天）、jetzt（现在）。它们通常紧跟在第二位的动词后面，如果有句框，就站在句框中间。",
+              "canonical": "Ich will jetzt lernen.",
+              "hint_zh": "对比法语和西语：德语时间词更喜欢站在句子中间，而不是句末。"
+            },
+            {
+              "exercise_id": "de_time_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "我现在想学习。",
+              "canonical": "Ich will jetzt lernen.",
+              "focus_tags": ["time_word", "verb_final"],
+              "hint_zh": "Ich will + jetzt + lernen（句尾）。"
+            },
+            {
+              "exercise_id": "de_time_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "我现在想学习。",
+              "canonical": "Ich will jetzt lernen.",
+              "blocks": ["Ich", "will", "jetzt", "lernen"],
+              "distractors": ["heute", "morgen"],
+              "focus_tags": ["time_word"]
+            },
+            {
+              "exercise_id": "de_time_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "我今天有时间。",
+              "canonical": "Ich habe heute Zeit.",
+              "blocks": ["Ich", "habe", "heute", "Zeit"],
+              "distractors": ["jetzt"],
+              "focus_tags": ["time_word", "have"],
+              "hint_zh": "时间词紧跟动词 habe 之后。"
+            },
+            {
+              "exercise_id": "de_time_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：我现在想学习。",
+              "canonical": "Ich will jetzt lernen.",
+              "focus_tags": ["time_word", "pronunciation"]
+            },
+            {
+              "exercise_id": "de_time_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：我明天想说德语。",
+              "canonical": "Ich will morgen Deutsch sprechen.",
+              "blocks": ["Ich", "will", "morgen", "Deutsch", "sprechen"],
+              "distractors": ["heute"],
+              "focus_tags": ["time_word", "verb_final"],
+              "hint_zh": "只改变时间：morgen 进入句框，sprechen 仍在句尾。"
+            }
+          ]
+        }
+      ]
     },
     {
       "engine_id": "de_engine_09_can",

@@ -306,38 +306,296 @@
     {
       "engine_id": "fr_engine_05_restaurant",
       "title_zh": "餐厅点餐",
-      "structure_hint": "Je voudrais…",
-      "summary_zh": "用礼貌形式点单。",
-      "status": "coming_soon",
+      "structure_hint": "Je voudrais… , s'il vous plaît",
+      "summary_zh": "用礼貌形式点单和买单。",
+      "status": "available",
       "free": false,
-      "lessons": []
+      "lessons": [
+        {
+          "lesson_id": "fr_rest_01",
+          "title_zh": "我想要一杯咖啡",
+          "duration_min": 8,
+          "objective_zh": "学会 Je voudrais 礼貌点单，并迁移到数量变化。",
+          "exercises": [
+            {
+              "exercise_id": "fr_rest_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "你已经会说 Je veux（我想）。在餐厅里，法语有一个更礼貌的版本——这节课就用它点一杯咖啡。"
+            },
+            {
+              "exercise_id": "fr_rest_01_understand",
+              "type": "understand",
+              "explanation_zh": "Je voudrais 是 Je veux 的礼貌形式，相当于「我想要 / 麻烦给我」。句尾加 s'il vous plaît（请）会更自然。",
+              "canonical": "Je voudrais un café, s'il vous plaît.",
+              "hint_zh": "把 s'il vous plaît 当成一个固定词块，不必拆开分析。"
+            },
+            {
+              "exercise_id": "fr_rest_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "我想要一杯咖啡，谢谢。（餐厅点单）",
+              "canonical": "Je voudrais un café, s'il vous plaît.",
+              "focus_tags": ["polite_request"],
+              "hint_zh": "Je voudrais + un café + s'il vous plaît。"
+            },
+            {
+              "exercise_id": "fr_rest_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "我想要一杯咖啡，谢谢。",
+              "canonical": "Je voudrais un café, s'il vous plaît.",
+              "blocks": ["Je", "voudrais", "un", "café", "s'il vous plaît"],
+              "distractors": ["veux", "une"],
+              "focus_tags": ["polite_request"]
+            },
+            {
+              "exercise_id": "fr_rest_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "麻烦给我账单。",
+              "canonical": "Je voudrais l'addition, s'il vous plaît.",
+              "blocks": ["Je", "voudrais", "l'addition", "s'il vous plaît"],
+              "distractors": ["un café"],
+              "focus_tags": ["polite_request", "restaurant"],
+              "hint_zh": "l'addition 是「账单」，自带缩合冠词。"
+            },
+            {
+              "exercise_id": "fr_rest_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：我想要一杯咖啡，谢谢。",
+              "canonical": "Je voudrais un café, s'il vous plaît.",
+              "focus_tags": ["polite_request", "pronunciation"]
+            },
+            {
+              "exercise_id": "fr_rest_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：我想要两杯咖啡，谢谢。",
+              "canonical": "Je voudrais deux cafés, s'il vous plaît.",
+              "blocks": ["Je", "voudrais", "deux", "cafés", "s'il vous plaît"],
+              "distractors": ["un", "café"],
+              "focus_tags": ["polite_request", "plural"],
+              "hint_zh": "只改变数量：deux + cafés（复数加 s）。"
+            }
+          ]
+        }
+      ]
     },
     {
       "engine_id": "fr_engine_06_questions",
       "title_zh": "提出问题",
       "structure_hint": "Est-ce que… ?",
-      "summary_zh": "把陈述句变成问题。",
-      "status": "coming_soon",
+      "summary_zh": "在句首加 Est-ce que，陈述句立刻变问句。",
+      "status": "available",
       "free": false,
-      "lessons": []
+      "lessons": [
+        {
+          "lesson_id": "fr_ques_01",
+          "title_zh": "你说法语吗？",
+          "duration_min": 8,
+          "objective_zh": "学会用 Est-ce que 提问，并迁移到已学的 vouloir 结构。",
+          "exercises": [
+            {
+              "exercise_id": "fr_ques_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "会提问，对话才能继续。法语有一个万能提问开关，这节课把它装上。"
+            },
+            {
+              "exercise_id": "fr_ques_01_understand",
+              "type": "understand",
+              "explanation_zh": "把 Est-ce que 放在任何陈述句前面，它就变成了是非问句，语序完全不变。「你说」是 tu parles。",
+              "canonical": "Est-ce que tu parles français ?",
+              "hint_zh": "Est-ce que 读作一个整体：「艾斯克」。"
+            },
+            {
+              "exercise_id": "fr_ques_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "你说法语吗？",
+              "canonical": "Est-ce que tu parles français ?",
+              "focus_tags": ["question", "second_person"],
+              "hint_zh": "Est-ce que + tu parles + français。"
+            },
+            {
+              "exercise_id": "fr_ques_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "你说法语吗？",
+              "canonical": "Est-ce que tu parles français ?",
+              "blocks": ["Est-ce que", "tu", "parles", "français"],
+              "distractors": ["parle", "je"],
+              "focus_tags": ["question"]
+            },
+            {
+              "exercise_id": "fr_ques_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "你想要一杯咖啡吗？",
+              "canonical": "Est-ce que tu veux un café ?",
+              "blocks": ["Est-ce que", "tu", "veux", "un", "café"],
+              "distractors": ["voudrais"],
+              "focus_tags": ["question", "want_infinitive"],
+              "hint_zh": "复用你学过的 veux：提问开关 + 原句。"
+            },
+            {
+              "exercise_id": "fr_ques_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口问：你说法语吗？",
+              "canonical": "Est-ce que tu parles français ?",
+              "focus_tags": ["question", "pronunciation"]
+            },
+            {
+              "exercise_id": "fr_ques_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：你想说吗？",
+              "canonical": "Est-ce que tu veux parler ?",
+              "blocks": ["Est-ce que", "tu", "veux", "parler"],
+              "distractors": ["parles"],
+              "focus_tags": ["question", "want_infinitive"],
+              "hint_zh": "只改变一个变量：把「说法语」换成「想说」——veux 后接动词原形。"
+            }
+          ]
+        }
+      ]
     },
     {
       "engine_id": "fr_engine_07_negation",
       "title_zh": "说「不」",
       "structure_hint": "ne … pas",
-      "summary_zh": "否定框架包住动词。",
-      "status": "coming_soon",
+      "summary_zh": "ne 和 pas 像一对括号，把动词夹在中间。",
+      "status": "available",
       "free": false,
-      "lessons": []
+      "lessons": [
+        {
+          "lesson_id": "fr_neg_01",
+          "title_zh": "我不说英语",
+          "duration_min": 8,
+          "objective_zh": "学会 ne … pas 否定框架，并迁移到 vouloir 结构。",
+          "exercises": [
+            {
+              "exercise_id": "fr_neg_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "会说「不」，你才能表达真实想法。法语的否定是一对搭档，这节课认识它们。"
+            },
+            {
+              "exercise_id": "fr_neg_01_understand",
+              "type": "understand",
+              "explanation_zh": "法语否定用两个词：ne 放在动词前，pas 放在动词后，像一对括号把动词夹住。「我说」是 je parle。",
+              "canonical": "Je ne parle pas anglais.",
+              "hint_zh": "口语里 ne 常被弱化，但书面和清晰表达时两个都要有。"
+            },
+            {
+              "exercise_id": "fr_neg_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "我不说英语。",
+              "canonical": "Je ne parle pas anglais.",
+              "focus_tags": ["negation"],
+              "hint_zh": "Je + ne + parle + pas + anglais。"
+            },
+            {
+              "exercise_id": "fr_neg_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "我不说英语。",
+              "canonical": "Je ne parle pas anglais.",
+              "blocks": ["Je", "ne", "parle", "pas", "anglais"],
+              "distractors": ["parler", "non"],
+              "focus_tags": ["negation"]
+            },
+            {
+              "exercise_id": "fr_neg_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "我不想。",
+              "canonical": "Je ne veux pas.",
+              "blocks": ["Je", "ne", "veux", "pas"],
+              "distractors": ["parle"],
+              "focus_tags": ["negation", "want_infinitive"]
+            },
+            {
+              "exercise_id": "fr_neg_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：我不说英语。",
+              "canonical": "Je ne parle pas anglais.",
+              "focus_tags": ["negation", "pronunciation"]
+            },
+            {
+              "exercise_id": "fr_neg_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：我不想说。",
+              "canonical": "Je ne veux pas parler.",
+              "blocks": ["Je", "ne", "veux", "pas", "parler"],
+              "distractors": ["parle"],
+              "focus_tags": ["negation", "want_infinitive"],
+              "hint_zh": "只加一个变量：否定括号夹住 veux，动词原形 parler 留在括号外面。"
+            }
+          ]
+        }
+      ]
     },
     {
       "engine_id": "fr_engine_08_time",
       "title_zh": "时间表达",
-      "structure_hint": "aujourd'hui / demain",
-      "summary_zh": "把时间词装进已有结构。",
-      "status": "coming_soon",
+      "structure_hint": "aujourd'hui / demain / maintenant",
+      "summary_zh": "把时间词装进你已掌握的结构。",
+      "status": "available",
       "free": false,
-      "lessons": []
+      "lessons": [
+        {
+          "lesson_id": "fr_time_01",
+          "title_zh": "今天、明天、现在",
+          "duration_min": 8,
+          "objective_zh": "学会三个高频时间词，并与已学结构自由组合。",
+          "exercises": [
+            {
+              "exercise_id": "fr_time_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "这节课没有新语法——只有三个时间词。你会发现它们能直接插进你已经会的每个句子。"
+            },
+            {
+              "exercise_id": "fr_time_01_understand",
+              "type": "understand",
+              "explanation_zh": "aujourd'hui（今天）、demain（明天）、maintenant（现在）。它们通常放在句末，不改变原句的语序。",
+              "canonical": "Je veux parler aujourd'hui.",
+              "hint_zh": "aujourd'hui 是一个整词，中间的缩写符号不用拆。"
+            },
+            {
+              "exercise_id": "fr_time_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "我今天想学习。",
+              "canonical": "Je veux apprendre aujourd'hui.",
+              "focus_tags": ["time_word", "want_infinitive"],
+              "hint_zh": "原句 Je veux apprendre + 时间词在句末。"
+            },
+            {
+              "exercise_id": "fr_time_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "我今天想学习。",
+              "canonical": "Je veux apprendre aujourd'hui.",
+              "blocks": ["Je", "veux", "apprendre", "aujourd'hui"],
+              "distractors": ["demain", "maintenant"],
+              "focus_tags": ["time_word"]
+            },
+            {
+              "exercise_id": "fr_time_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "我明天想说法语。",
+              "canonical": "Je veux parler français demain.",
+              "blocks": ["Je", "veux", "parler", "français", "demain"],
+              "distractors": ["aujourd'hui"],
+              "focus_tags": ["time_word"]
+            },
+            {
+              "exercise_id": "fr_time_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：我今天想学习。",
+              "canonical": "Je veux apprendre aujourd'hui.",
+              "focus_tags": ["time_word", "pronunciation"]
+            },
+            {
+              "exercise_id": "fr_time_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：我现在有一个问题。",
+              "canonical": "J'ai une question maintenant.",
+              "blocks": ["J'ai", "une", "question", "maintenant"],
+              "distractors": ["demain"],
+              "focus_tags": ["time_word", "have"],
+              "hint_zh": "换一个结构试试：J'ai（我有）+ 时间词照样放句末。"
+            }
+          ]
+        }
+      ]
     },
     {
       "engine_id": "fr_engine_09_can",

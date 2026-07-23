@@ -332,36 +332,318 @@
       "title_zh": "餐厅点餐",
       "structure_hint": "~ 주세요",
       "summary_zh": "用 주세요 礼貌点单。",
-      "status": "coming_soon",
+      "status": "available",
       "free": false,
-      "lessons": []
+      "lessons": [
+        {
+          "lesson_id": "ko_rest_01",
+          "title_zh": "请给我咖啡",
+          "duration_min": 8,
+          "objective_zh": "学会「~ 주세요」点单句式，并迁移到数量表达。",
+          "exercises": [
+            {
+              "exercise_id": "ko_rest_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "在韩国的咖啡店和餐厅，一个句式就能搞定大部分点单——这节课学它。"
+            },
+            {
+              "exercise_id": "ko_rest_01_understand",
+              "type": "understand",
+              "explanation_zh": "「请给我……」是名词 + 주세요。点单时宾语助词经常省略，直接说 커피 주세요 就非常自然。",
+              "canonical": "커피 주세요.",
+              "romanized": "keopi juseyo",
+              "hint_zh": "주세요 本身就带着礼貌，不需要再加别的敬语。"
+            },
+            {
+              "exercise_id": "ko_rest_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "请给我咖啡。",
+              "canonical": "커피 주세요.",
+              "romanized": "keopi juseyo",
+              "focus_tags": ["polite_request"],
+              "hint_zh": "커피 + 주세요。"
+            },
+            {
+              "exercise_id": "ko_rest_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "请给我咖啡。",
+              "canonical": "커피 주세요.",
+              "romanized": "keopi juseyo",
+              "blocks": ["커피", "주세요"],
+              "distractors": ["커피를", "있어요"],
+              "focus_tags": ["polite_request"]
+            },
+            {
+              "exercise_id": "ko_rest_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "请给我水。",
+              "canonical": "물 주세요.",
+              "romanized": "mul juseyo",
+              "blocks": ["물", "주세요"],
+              "distractors": ["커피"],
+              "focus_tags": ["polite_request"]
+            },
+            {
+              "exercise_id": "ko_rest_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：请给我咖啡。",
+              "canonical": "커피 주세요.",
+              "romanized": "keopi juseyo",
+              "focus_tags": ["polite_request", "pronunciation"]
+            },
+            {
+              "exercise_id": "ko_rest_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：请给我两杯咖啡。",
+              "canonical": "커피 두 잔 주세요.",
+              "romanized": "keopi du jan juseyo",
+              "blocks": ["커피", "두 잔", "주세요"],
+              "distractors": ["물"],
+              "focus_tags": ["polite_request", "counter"],
+              "hint_zh": "只加一个变量：두 잔（两杯）放在名词后、주세요 前。잔 是「杯」的量词。"
+            }
+          ]
+        }
+      ]
     },
     {
       "engine_id": "ko_engine_06_questions",
-      "title_zh": "提出问题",
-      "structure_hint": "语调 + 疑问词",
-      "summary_zh": "客气语尾的疑问用法。",
-      "status": "coming_soon",
+      "title_zh": "问在哪里",
+      "structure_hint": "~이/가 어디예요?",
+      "summary_zh": "用一个句型找到任何地方。",
+      "status": "available",
       "free": false,
-      "lessons": []
+      "lessons": [
+        {
+          "lesson_id": "ko_ques_01",
+          "title_zh": "洗手间在哪里？",
+          "duration_min": 8,
+          "objective_zh": "学会「~이/가 어디예요?」问位置，并迁移到新地点。",
+          "exercises": [
+            {
+              "exercise_id": "ko_ques_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "旅行里最救命的一句话：「……在哪里？」你已经认识助词 이/가，这节课直接用上。"
+            },
+            {
+              "exercise_id": "ko_ques_01_understand",
+              "type": "understand",
+              "explanation_zh": "「……在哪里？」是名词 + 이/가 + 어디예요？어디 是「哪里」，예요 你在自我介绍课里已经见过。",
+              "canonical": "화장실이 어디예요?",
+              "romanized": "hwajangsiri eodiyeyo",
+              "hint_zh": "화장실（洗手间）以辅音结尾，所以用 이。"
+            },
+            {
+              "exercise_id": "ko_ques_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "洗手间在哪里？",
+              "canonical": "화장실이 어디예요?",
+              "romanized": "hwajangsiri eodiyeyo",
+              "focus_tags": ["question_where", "subject_particle"],
+              "hint_zh": "화장실이 + 어디예요?"
+            },
+            {
+              "exercise_id": "ko_ques_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "洗手间在哪里？",
+              "canonical": "화장실이 어디예요?",
+              "romanized": "hwajangsiri eodiyeyo",
+              "blocks": ["화장실이", "어디예요"],
+              "distractors": ["화장실을", "있어요"],
+              "focus_tags": ["question_where"]
+            },
+            {
+              "exercise_id": "ko_ques_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "车站在哪里？",
+              "canonical": "역이 어디예요?",
+              "romanized": "yeogi eodiyeyo",
+              "blocks": ["역이", "어디예요"],
+              "distractors": ["화장실이"],
+              "focus_tags": ["question_where"],
+              "hint_zh": "역 是「车站」，辅音结尾用 이。"
+            },
+            {
+              "exercise_id": "ko_ques_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口问：洗手间在哪里？",
+              "canonical": "화장실이 어디예요?",
+              "romanized": "hwajangsiri eodiyeyo",
+              "focus_tags": ["question_where", "pronunciation"]
+            },
+            {
+              "exercise_id": "ko_ques_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：酒店在哪里？",
+              "canonical": "호텔이 어디예요?",
+              "romanized": "hoteri eodiyeyo",
+              "blocks": ["호텔이", "어디예요"],
+              "distractors": ["역이"],
+              "focus_tags": ["question_where"],
+              "hint_zh": "只改变地点：호텔（酒店）。"
+            }
+          ]
+        }
+      ]
     },
     {
       "engine_id": "ko_engine_07_negation",
       "title_zh": "说「不」",
       "structure_hint": "안 + 动词",
-      "summary_zh": "最常用的否定方式。",
-      "status": "coming_soon",
+      "summary_zh": "把 안 放在动词前，一步完成否定。",
+      "status": "available",
       "free": false,
-      "lessons": []
+      "lessons": [
+        {
+          "lesson_id": "ko_neg_01",
+          "title_zh": "我不喝咖啡",
+          "duration_min": 8,
+          "objective_zh": "学会「안 + 动词」的否定，并迁移到喜欢结构。",
+          "exercises": [
+            {
+              "exercise_id": "ko_neg_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "说「不」在韩语里非常直接：一个小词放在动词前面就够了。"
+            },
+            {
+              "exercise_id": "ko_neg_01_understand",
+              "type": "understand",
+              "explanation_zh": "把 안 放在动词前面就是否定。「喝」是 마셔요，「不喝」就是 안 마셔요。",
+              "canonical": "커피를 안 마셔요.",
+              "romanized": "keopireul an masyeoyo",
+              "hint_zh": "안 紧贴动词，宾语和助词的位置不变。"
+            },
+            {
+              "exercise_id": "ko_neg_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "我不喝咖啡。",
+              "canonical": "커피를 안 마셔요.",
+              "romanized": "keopireul an masyeoyo",
+              "focus_tags": ["negation", "object_particle"],
+              "hint_zh": "커피를 + 안 + 마셔요。"
+            },
+            {
+              "exercise_id": "ko_neg_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "我不喝咖啡。",
+              "canonical": "커피를 안 마셔요.",
+              "romanized": "keopireul an masyeoyo",
+              "blocks": ["커피를", "안", "마셔요"],
+              "distractors": ["커피가", "없어요"],
+              "focus_tags": ["negation"]
+            },
+            {
+              "exercise_id": "ko_neg_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "我现在不去。",
+              "canonical": "지금 안 가요.",
+              "romanized": "jigeum an gayo",
+              "blocks": ["지금", "안", "가요"],
+              "distractors": ["마셔요"],
+              "focus_tags": ["negation", "time_word"],
+              "hint_zh": "가요 是「去」；안 依然紧贴动词。"
+            },
+            {
+              "exercise_id": "ko_neg_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：我不喝咖啡。",
+              "canonical": "커피를 안 마셔요.",
+              "romanized": "keopireul an masyeoyo",
+              "focus_tags": ["negation", "pronunciation"]
+            },
+            {
+              "exercise_id": "ko_neg_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：我不喜欢茶。",
+              "canonical": "차를 안 좋아해요.",
+              "romanized": "chareul an joahaeyo",
+              "blocks": ["차를", "안", "좋아해요"],
+              "distractors": ["커피를"],
+              "focus_tags": ["negation", "like"],
+              "hint_zh": "复用你学过的 좋아해요：只在动词前加 안。"
+            }
+          ]
+        }
+      ]
     },
     {
       "engine_id": "ko_engine_08_time",
       "title_zh": "时间表达",
       "structure_hint": "지금 / 오늘 / 내일",
-      "summary_zh": "时间词与已有结构组合。",
-      "status": "coming_soon",
+      "summary_zh": "时间词放句首，与已有结构组合。",
+      "status": "available",
       "free": false,
-      "lessons": []
+      "lessons": [
+        {
+          "lesson_id": "ko_time_01",
+          "title_zh": "今天、明天、现在",
+          "duration_min": 8,
+          "objective_zh": "学会三个高频时间词，并与已学结构自由组合。",
+          "exercises": [
+            {
+              "exercise_id": "ko_time_01_warm",
+              "type": "warm_start",
+              "explanation_zh": "这节课没有新语法——三个时间词，放进你已经会的句子开头。"
+            },
+            {
+              "exercise_id": "ko_time_01_understand",
+              "type": "understand",
+              "explanation_zh": "오늘（今天）、내일（明天）、지금（现在）。韩语时间词一般放在句首，后面的句子保持原样。",
+              "canonical": "오늘 시간이 있어요.",
+              "romanized": "oneul sigani isseoyo",
+              "hint_zh": "复用「有」的结构：时间词 + 시간이 있어요。"
+            },
+            {
+              "exercise_id": "ko_time_01_recall",
+              "type": "guided_recall",
+              "prompt_zh": "我今天有时间。",
+              "canonical": "오늘 시간이 있어요.",
+              "romanized": "oneul sigani isseoyo",
+              "focus_tags": ["time_word", "have_exist"],
+              "hint_zh": "오늘 放句首 + 시간이 있어요。"
+            },
+            {
+              "exercise_id": "ko_time_01_assemble1",
+              "type": "assemble",
+              "prompt_zh": "我今天有时间。",
+              "canonical": "오늘 시간이 있어요.",
+              "romanized": "oneul sigani isseoyo",
+              "blocks": ["오늘", "시간이", "있어요"],
+              "distractors": ["내일", "지금"],
+              "focus_tags": ["time_word"]
+            },
+            {
+              "exercise_id": "ko_time_01_assemble2",
+              "type": "assemble",
+              "prompt_zh": "我明天想学习。",
+              "canonical": "내일 배우고 싶어요.",
+              "romanized": "naeil baeugo sipeoyo",
+              "blocks": ["내일", "배우고 싶어요"],
+              "distractors": ["오늘"],
+              "focus_tags": ["time_word", "want_desiderative"]
+            },
+            {
+              "exercise_id": "ko_time_01_speak",
+              "type": "speak",
+              "prompt_zh": "开口说：我今天有时间。",
+              "canonical": "오늘 시간이 있어요.",
+              "romanized": "oneul sigani isseoyo",
+              "focus_tags": ["time_word", "pronunciation"]
+            },
+            {
+              "exercise_id": "ko_time_01_transfer",
+              "type": "transfer",
+              "prompt_zh": "迁移一下：我现在有一个问题。",
+              "canonical": "지금 질문이 있어요.",
+              "romanized": "jigeum jilmuni isseoyo",
+              "blocks": ["지금", "질문이", "있어요"],
+              "distractors": ["시간이"],
+              "focus_tags": ["time_word", "have_exist"],
+              "hint_zh": "换一个对象：지금（现在）+ 질문이 있어요。"
+            }
+          ]
+        }
+      ]
     },
     {
       "engine_id": "ko_engine_09_can",
